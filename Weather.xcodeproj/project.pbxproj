@@ -161,7 +161,6 @@
 				2016EC9921BAD981006466A4 /* Core Layer */,
 				2016EC8821BAD5D9006466A4 /* Services */,
 				2016EC8921BAD632006466A4 /* Resources */,
-				2016EC7421BAD487006466A4 /* Info.plist */,
 				2016EC8A21BAD666006466A4 /* Supporting Files */,
 			);
 			path = Weather;
@@ -199,6 +198,7 @@
 		2016EC8A21BAD666006466A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2016EC7421BAD487006466A4 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -301,11 +301,7 @@
 				2016EC9D21BADC0E006466A4 /* Initialization */,
 				2016EC9C21BADC0A006466A4 /* Repository */,
 				2016EC9B21BADBF1006466A4 /* Local Storage Service */,
-				2058F3A821BB9FCD00A0A8F4 /* LocalStorageService.swift */,
-				2058F3AA21BB9FD600A0A8F4 /* LocalStorageServiceProtocol.swift */,
 				2016EC9A21BADBE5006466A4 /* Remote Service */,
-				2058F3B121BB9FEF00A0A8F4 /* RemoteService.swift */,
-				2058F3B321BB9FF700A0A8F4 /* RemoteServiceProtocol.swift */,
 			);
 			path = "Bussiness Logic Layer";
 			sourceTree = "<group>";
@@ -322,6 +318,8 @@
 		2016EC9A21BADBE5006466A4 /* Remote Service */ = {
 			isa = PBXGroup;
 			children = (
+				2058F3B321BB9FF700A0A8F4 /* RemoteServiceProtocol.swift */,
+				2058F3B121BB9FEF00A0A8F4 /* RemoteService.swift */,
 				2058F3AC21BB9FE000A0A8F4 /* Entities */,
 			);
 			path = "Remote Service";
@@ -330,6 +328,8 @@
 		2016EC9B21BADBF1006466A4 /* Local Storage Service */ = {
 			isa = PBXGroup;
 			children = (
+				2058F3AA21BB9FD600A0A8F4 /* LocalStorageServiceProtocol.swift */,
+				2058F3A821BB9FCD00A0A8F4 /* LocalStorageService.swift */,
 				2058F3A321BB9FBA00A0A8F4 /* Entities */,
 			);
 			path = "Local Storage Service";
@@ -834,7 +834,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ7K5N293V;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -853,7 +853,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ7K5N293V;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

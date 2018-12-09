@@ -28,29 +28,23 @@ class NWCityEntity {
     }
     
     var weatherDescription : String {
-        return weatherType?.description ?? ""
+        return weatherDescriptionObj?.description ?? ""
     }
     
     fileprivate var weatherInfo: NWWeatherMainEntity?
-    fileprivate var weatherType: NWWeatherDiscripionEntity?
+    fileprivate var weatherDescriptionObj: NWWeatherDiscripionEntity?
     
     init(json: [String: AnyObject]) {
         print(json)
-        enum Key : String {
-            case id = "id"
-            case name = "name"
-            case weatherInfo = "main"
-            case description = "weather"
-        }
-        
-        let id_ = json[Key.id.rawValue] as? Int
-        let name_ = json[Key.name.rawValue] as? String
-        let weatherInfo_ = json[Key.weatherInfo.rawValue] as? [String: AnyObject]
-        let weatherType_ = json["weather"] as? Array<[String: AnyObject]>
+        let id_ = json[Key.id] as? Int
+        let name_ = json[Key.name] as? String
+        let weatherInfo_ = json[Key.weatherInfo] as? [String: AnyObject]
+        let weatherDescriptionObj_ = json[Key.description] as? Array<[String: AnyObject]>
+       
         id = id_ ?? 0
         name = name_ ?? ""
         weatherInfo = NWWeatherMainEntity(json: weatherInfo_)
-        weatherType = NWWeatherDiscripionEntity(json: weatherType_?.first)
+        weatherDescriptionObj = NWWeatherDiscripionEntity(json: weatherDescriptionObj_?.first)
     }
     
     var plainObject : CityPlainEntity {
@@ -61,5 +55,12 @@ class NWCityEntity {
                                maxTemp: maxTemp,
                                humidity: humidity,
                                weatherDescription: weatherDescription)
+    }
+    
+    struct Key {
+        static let id = "id"
+        static let name = "name"
+        static let weatherInfo = "main"
+        static let description = "weather"
     }
 }

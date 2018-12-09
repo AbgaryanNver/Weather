@@ -10,9 +10,9 @@ import UIKit
 
 struct WeatherViewControllerInitializer {
     
-    func createModule() -> UIViewController {
+    func createModule() -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let view = storyboard.instantiateViewController(withIdentifier: "WeatherViewController") as! WeatherViewController
+        let view = storyboard.instantiateViewController(withIdentifier: "WeatherViewController") as? WeatherViewController
 
         let weatherPresenter = WeatherPresentor()
 
@@ -22,7 +22,7 @@ struct WeatherViewControllerInitializer {
         let businessLayerInitiliazor = BusinessLogicLayerInitiialization()
         let citiesRepository = businessLayerInitiliazor.createCitietsRepository()
         
-        view.output = weatherPresenter
+        view?.output = weatherPresenter
         weatherPresenter.interactor = weatherInteractor
         weatherPresenter.view = view
         weatherPresenter.router = nil

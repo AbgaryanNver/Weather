@@ -15,20 +15,22 @@ class NWWeatherMainEntity {
     var humidity: Double
     
     init?(json: [String: AnyObject]?) {
-        enum Key : String {
-            case currentTemp = "temp" 
-            case maxTemp = "temp_max"
-            case minTemp = "temp_min"
-            case humidity = "humidity"
-        }
-        guard let currentTemp_ = json?[Key.currentTemp.rawValue] as? Double,
-              let maxTemp_ = json?[Key.maxTemp.rawValue] as? Double,
-              let minTemp_ = json?[Key.minTemp.rawValue] as? Double,
-              let humidity_ = json?[Key.humidity.rawValue] as? Double else { return nil }
+        
+        guard let currentTemp_ = json?[Key.currentTemp] as? Double,
+              let maxTemp_ = json?[Key.maxTemp] as? Double,
+              let minTemp_ = json?[Key.minTemp] as? Double,
+              let humidity_ = json?[Key.humidity] as? Double else { return nil }
    
         currentTemp = currentTemp_
         maxTemp = maxTemp_
         minTemp = minTemp_
         humidity = humidity_
+    }
+    
+    struct Key {
+        static let currentTemp = "temp"
+        static let  maxTemp = "temp_max"
+        static let  minTemp = "temp_min"
+        static let  humidity = "humidity"
     }
 }

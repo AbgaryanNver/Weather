@@ -7,7 +7,6 @@
 //
 
 protocol WeatherViewOutput {
-
     func viewIsReady()
     func didTriggerViewWillAppear()
     func didTriggerViewWillDisappear()

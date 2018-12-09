@@ -8,7 +8,6 @@
 
 import UIKit
 
-//@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -17,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let initiliazer = WeatherViewControllerInitializer()
-        let vc = initiliazer.createModule()
-        
         let navController = UINavigationController()
-        navController.viewControllers = [vc]
-        
+
+        let weatherViewController = initiliazer.createModule()
+        if let vc = weatherViewController {
+            navController.viewControllers = [vc]
+        }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
