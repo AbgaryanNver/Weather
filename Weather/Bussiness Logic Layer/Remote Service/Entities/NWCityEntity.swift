@@ -8,10 +8,57 @@
 
 class NWCityEntity {
     
-    var id : Int!
-    var name : String!
-    var weatherInfo: NWWeatherMainEntity!
-    var weatherType: NWWeatherDiscripionEntity!
+    var id : Int
+    var name : String
+    
+    var currentTemp : Double {
+        get {
+            return weatherInfo?.currentTemp ?? 0.0
+        }
+        set(s) {
+            weatherInfo?.currentTemp = s
+        }
+    }
+    
+    var minTemp : Double {
+        get {
+            return weatherInfo?.minTemp ?? 0.0
+        }
+        set(s) {
+            weatherInfo?.minTemp = s
+        }
+    }
+    
+    
+    var maxTemp : Double {
+        get {
+            return weatherInfo?.maxTemp ?? 0.0
+        }
+        set(s){
+            weatherInfo?.maxTemp = s
+        }
+    }
+    
+    var humidity : Double {
+        get {
+            return weatherInfo?.humidity ?? 0.0
+        }
+        set(s) {
+            weatherInfo?.humidity = s
+        }
+    }
+    
+    var weatherDescription : String {
+        get {
+            return weatherType?.description ?? ""
+        }
+        set(s) {
+            weatherType?.description = s
+        }
+    }
+    
+    var weatherInfo: NWWeatherMainEntity?
+    var weatherType: NWWeatherDiscripionEntity?
     
     init(json: [String: AnyObject]) {
         print(json)
@@ -35,10 +82,10 @@ class NWCityEntity {
     var plainObject : CityPlainEntity {
         return CityPlainEntity(id: id,
                                name: name,
-                               currentTemp: weatherInfo.currentTemp,
-                               minTemp: weatherInfo.minTemp,
-                               maxTemp: weatherInfo.maxTemp,
-                               humidity: weatherInfo.humidity,
-                               weatherType: weatherType.description)
+                               currentTemp: currentTemp,
+                               minTemp: minTemp,
+                               maxTemp: maxTemp,
+                               humidity: humidity,
+                               weatherDescription: weatherDescription)
     }
 }

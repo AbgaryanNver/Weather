@@ -9,10 +9,10 @@
 import Foundation
 class NWWeatherDiscripionEntity {
     
-    var description: String!
+    var description: String
     
-    init(json: [String: AnyObject]?) {
-  
-        description = json?["description"] as? String ?? ""
+    init?(json: [String: AnyObject]?) {
+        guard let description_ = json?["description"] as? String else { return nil }
+        description = description_
     }
 }

@@ -1,9 +1,9 @@
 //
-//  CitiesViewControllerInitializer.swift
-//  Weather_Viper
+//  WeatherViewControllerInitializer.swift
+//  Weather
 //
-//  Created by Hayk Mnatsakanyan on 11/27/18.
-//  Copyright © 2018 Hayk Mnatsakanyan. All rights reserved.
+//  Created by Nver Abgaryan on 12/8/18.
+//  Copyright © 2018 Nver Abgaryan. All rights reserved.
 //
 
 import UIKit

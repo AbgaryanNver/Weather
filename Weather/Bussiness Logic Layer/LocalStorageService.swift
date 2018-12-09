@@ -56,14 +56,7 @@ extension LocalStorageService {
         }
         var plainCities = Array<CityPlainEntity>()
         for city in dbCities {
-            var plainObj = CityPlainEntity()
-            plainObj.id = city.id
-            plainObj.name = city.name
-            plainObj.currentTemp = city.currentTemp
-            plainObj.maxTemp = city.maxTemp
-            plainObj.minTemp = city.minTemp
-            plainObj.humidity = city.humidity
-            plainObj.weatherType = city.weatherType
+            let plainObj = city.plainObject
             plainCities.append(plainObj)
         }
         return plainCities
@@ -82,7 +75,7 @@ extension LocalStorageService {
             dbCity.minTemp = city.minTemp
             dbCity.maxTemp = city.maxTemp
             dbCity.humidity = city.humidity
-            dbCity.weatherType = city.weatherType
+            dbCity.weatherDescription = city.weatherDescription
             dbCities.append(dbCity)
         }
         return dbCities

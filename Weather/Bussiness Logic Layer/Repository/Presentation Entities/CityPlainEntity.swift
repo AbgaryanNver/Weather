@@ -16,6 +16,6 @@ struct CityPlainEntity {
     var minTemp = 0.0
     var maxTemp = 0.0
     var humidity = 0.0
-    var weatherType = ""
+    var weatherDescription = ""
     
 }

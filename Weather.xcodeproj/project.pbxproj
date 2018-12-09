@@ -25,7 +25,7 @@
 		2058F39A21BB993300A0A8F4 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39921BB993300A0A8F4 /* TimeService.swift */; };
 		2058F39C21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */; };
 		2058F39E21BB9A7E00A0A8F4 /* CitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */; };
-		2058F3A021BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39F21BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift */; };
+		2058F3A021BB9B7800A0A8F4 /* WeatherViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39F21BB9B7800A0A8F4 /* WeatherViewControllerInitializer.swift */; };
 		2058F3A221BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */; };
 		2058F3A621BB9FBA00A0A8F4 /* LSCityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3A421BB9FBA00A0A8F4 /* LSCityEntity.swift */; };
 		2058F3A921BB9FCD00A0A8F4 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3A821BB9FCD00A0A8F4 /* LocalStorageService.swift */; };
@@ -81,7 +81,7 @@
 		2058F39921BB993300A0A8F4 /* TimeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
 		2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CititesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesRepository.swift; sourceTree = "<group>"; };
-		2058F39F21BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewControllerInitializer.swift; sourceTree = "<group>"; };
+		2058F39F21BB9B7800A0A8F4 /* WeatherViewControllerInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerInitializer.swift; sourceTree = "<group>"; };
 		2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogicLayerInitiialization.swift; sourceTree = "<group>"; };
 		2058F3A421BB9FBA00A0A8F4 /* LSCityEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCityEntity.swift; sourceTree = "<group>"; };
 		2058F3A821BB9FCD00A0A8F4 /* LocalStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		2016EC8F21BAD842006466A4 /* Initializer */ = {
 			isa = PBXGroup;
 			children = (
-				2058F39F21BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift */,
+				2058F39F21BB9B7800A0A8F4 /* WeatherViewControllerInitializer.swift */,
 			);
 			path = Initializer;
 			sourceTree = "<group>";
@@ -628,7 +628,7 @@
 				2058F3B221BB9FEF00A0A8F4 /* RemoteService.swift in Sources */,
 				2058F3A621BB9FBA00A0A8F4 /* LSCityEntity.swift in Sources */,
 				2058F3B621BBA5E200A0A8F4 /* RemoteManagerProtocol.swift in Sources */,
-				2058F3A021BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift in Sources */,
+				2058F3A021BB9B7800A0A8F4 /* WeatherViewControllerInitializer.swift in Sources */,
 				2058F3A221BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift in Sources */,
 				20C1920D21BD0AAC008F7112 /* main.swift in Sources */,
 				2058F3B021BB9FE000A0A8F4 /* NWCityEntity.swift in Sources */,

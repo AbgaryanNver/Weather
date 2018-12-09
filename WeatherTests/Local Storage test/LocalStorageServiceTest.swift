@@ -13,6 +13,7 @@ import RealmSwift
 @testable import Weather
 
 class LocalStorageServiceTest: XCTestCase {
+    
     let databaseService = LocalStorageService()
     
     override func setUp() {
@@ -57,8 +58,7 @@ class LocalStorageServiceTest: XCTestCase {
 
         }
     }
-
     
     private let dbName = "test database"
-
+    
 }

@@ -26,6 +26,6 @@ class CityTableViewCell: UITableViewCell {
         minTemp.text = entity.minTemp
         maxTemp.text = entity.maxTemp
         humidity.text = entity.humidity
-        weatherDescription.text = entity.weatherType
+        weatherDescription.text = entity.weatherDescription
     }
 }

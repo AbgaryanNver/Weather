@@ -48,7 +48,7 @@ class WeatherPresentor : WeatherViewOutput {
                                         minTemp: "min temp. = \(plainCity.minTemp) C",
                                         maxTemp: "max temp. = \(plainCity.maxTemp) C",
                                         humidity: "humidity = \(plainCity.humidity)",
-                                        weatherType: plainCity.weatherType)
+                                        weatherDescription: plainCity.weatherDescription)
             cities.append(cityEntity)
         }
         return cities

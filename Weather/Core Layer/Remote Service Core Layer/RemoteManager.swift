@@ -11,6 +11,7 @@ import Foundation
 struct RemoteManager : RemoteManagerProtocol {
 
     func downloadArray(forKey: String, url: URL, completion: @escaping (Array<NWCityEntity>?, Error?) -> Void) {
+      
         URLSession.shared.dataTask(with: url) { (data_, response_, error_) in
             if let data = data_, error_ == nil {
                 do {

@@ -16,21 +16,21 @@ class LSCityEntity : Object {
     @objc dynamic var minTemp = 0.0
     @objc dynamic var maxTemp = 0.0
     @objc dynamic var humidity = 0.0
-    @objc dynamic var weatherType = ""
+    @objc dynamic var weatherDescription = ""
 
     override static func primaryKey() -> String? {
         return "id"
     }
     
-//    var plainObject : CityPlainEntity {
-//        
-//        return CityPlainEntity(id: id,
-//                               name: name,
-//                               currentTemp: currentTemp,
-//                               minTemp: minTemp,
-//                               maxTemp: maxTemp,
-//                               humidity: humidity,
-//                               weatherType: weatherType)
-//    }
+    var plainObject : CityPlainEntity {
+        
+        return CityPlainEntity(id: id,
+                               name: name,
+                               currentTemp: currentTemp,
+                               minTemp: minTemp,
+                               maxTemp: maxTemp,
+                               humidity: humidity,
+                               weatherDescription: weatherDescription)
+    }
 }
 
