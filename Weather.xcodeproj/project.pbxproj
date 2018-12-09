@@ -23,7 +23,7 @@
 		2058F39521BB892F00A0A8F4 /* CityPlainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39421BB892F00A0A8F4 /* CityPlainEntity.swift */; };
 		2058F39721BB964100A0A8F4 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39621BB964100A0A8F4 /* WeatherInteractor.swift */; };
 		2058F39A21BB993300A0A8F4 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39921BB993300A0A8F4 /* TimeService.swift */; };
-		2058F39C21BB9A7600A0A8F4 /* WeatherRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39B21BB9A7600A0A8F4 /* WeatherRepositoryProtocol.swift */; };
+		2058F39C21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */; };
 		2058F39E21BB9A7E00A0A8F4 /* CitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */; };
 		2058F3A021BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F39F21BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift */; };
 		2058F3A221BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */; };
@@ -41,6 +41,10 @@
 		2058F3C421BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3C321BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift */; };
 		20B4C0AD21BB086700EE02F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B4C0AC21BB086700EE02F8 /* Default-568h@2x.png */; };
 		20C1920421BC5183008F7112 /* Cofig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920321BC5183008F7112 /* Cofig.swift */; };
+		20C1920B21BD056A008F7112 /* RealmManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920521BCFCEA008F7112 /* RealmManagerTest.swift */; };
+		20C1920D21BD0AAC008F7112 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920C21BD0AAC008F7112 /* main.swift */; };
+		20C1920F21BD0B5F008F7112 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920E21BD0B5E008F7112 /* TestAppDelegate.swift */; };
+		20C1921121BD1482008F7112 /* LocalStorageServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1921021BD1482008F7112 /* LocalStorageServiceTest.swift */; };
 		53DBC0CB492AD52FFF2E91A2 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BAA78F553CE4E911613A53 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +79,7 @@
 		2058F39421BB892F00A0A8F4 /* CityPlainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPlainEntity.swift; sourceTree = "<group>"; };
 		2058F39621BB964100A0A8F4 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
 		2058F39921BB993300A0A8F4 /* TimeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
-		2058F39B21BB9A7600A0A8F4 /* WeatherRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CititesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesRepository.swift; sourceTree = "<group>"; };
 		2058F39F21BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewControllerInitializer.swift; sourceTree = "<group>"; };
 		2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogicLayerInitiialization.swift; sourceTree = "<group>"; };
@@ -93,6 +97,10 @@
 		2058F3C321BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWWeatherDiscripionEntity.swift; sourceTree = "<group>"; };
 		20B4C0AC21BB086700EE02F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		20C1920321BC5183008F7112 /* Cofig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cofig.swift; sourceTree = "<group>"; };
+		20C1920521BCFCEA008F7112 /* RealmManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerTest.swift; sourceTree = "<group>"; };
+		20C1920C21BD0AAC008F7112 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		20C1920E21BD0B5E008F7112 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		20C1921021BD1482008F7112 /* LocalStorageServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageServiceTest.swift; sourceTree = "<group>"; };
 		46E5993C49665CDA75A76801 /* Pods_WeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BAA78F553CE4E911613A53 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B6F98775BCD778BE3E5466 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +166,8 @@
 		2016EC7C21BAD487006466A4 /* WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				2016EC7D21BAD487006466A4 /* WeatherTests.swift */,
+				20C1921221BD2574008F7112 /* base */,
+				20C1921421BD25B9008F7112 /* Local Storage test */,
 				2016EC7F21BAD487006466A4 /* Info.plist */,
 			);
 			path = WeatherTests;
@@ -192,6 +201,7 @@
 		2016EC8B21BAD74E006466A4 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				20C1920C21BD0AAC008F7112 /* main.swift */,
 				2016EC6821BAD486006466A4 /* AppDelegate.swift */,
 			);
 			path = ApplicationLayer;
@@ -283,9 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				2016EC9D21BADC0E006466A4 /* Initialization */,
-				2016EC9C21BADC0A006466A4 /* Weather Repository */,
-				2058F39B21BB9A7600A0A8F4 /* WeatherRepositoryProtocol.swift */,
-				2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */,
+				2016EC9C21BADC0A006466A4 /* Repository */,
 				2016EC9B21BADBF1006466A4 /* Local Storage Service */,
 				2058F3A821BB9FCD00A0A8F4 /* LocalStorageService.swift */,
 				2058F3AA21BB9FD600A0A8F4 /* LocalStorageServiceProtocol.swift */,
@@ -321,18 +329,20 @@
 			path = "Local Storage Service";
 			sourceTree = "<group>";
 		};
-		2016EC9C21BADC0A006466A4 /* Weather Repository */ = {
+		2016EC9C21BADC0A006466A4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */,
 				2058F39321BB88C100A0A8F4 /* Presentation Entities */,
+				2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */,
+				2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */,
 			);
-			path = "Weather Repository";
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		2016EC9D21BADC0E006466A4 /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
+				2058F3A121BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift */,
 			);
 			name = Initialization;
 			path = "New Group2";
@@ -396,6 +406,24 @@
 				2058F3C321BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		20C1921221BD2574008F7112 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				20C1920E21BD0B5E008F7112 /* TestAppDelegate.swift */,
+				2016EC7D21BAD487006466A4 /* WeatherTests.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		20C1921421BD25B9008F7112 /* Local Storage test */ = {
+			isa = PBXGroup;
+			children = (
+				20C1920521BCFCEA008F7112 /* RealmManagerTest.swift */,
+				20C1921021BD1482008F7112 /* LocalStorageServiceTest.swift */,
+			);
+			path = "Local Storage test";
 			sourceTree = "<group>";
 		};
 		3FAD0D2355A3F3D899860CBD /* Pods */ = {
@@ -602,6 +630,7 @@
 				2058F3B621BBA5E200A0A8F4 /* RemoteManagerProtocol.swift in Sources */,
 				2058F3A021BB9B7800A0A8F4 /* CitiesViewControllerInitializer.swift in Sources */,
 				2058F3A221BB9D5100A0A8F4 /* BusinessLogicLayerInitiialization.swift in Sources */,
+				20C1920D21BD0AAC008F7112 /* main.swift in Sources */,
 				2058F3B021BB9FE000A0A8F4 /* NWCityEntity.swift in Sources */,
 				2058F39A21BB993300A0A8F4 /* TimeService.swift in Sources */,
 				2058F3B821BBA5E900A0A8F4 /* RemoteManager.swift in Sources */,
@@ -615,7 +644,7 @@
 				2058F3BA21BBA5F100A0A8F4 /* RealmManager.swift in Sources */,
 				20C1920421BC5183008F7112 /* Cofig.swift in Sources */,
 				2016EC6B21BAD486006466A4 /* WeatherViewController.swift in Sources */,
-				2058F39C21BB9A7600A0A8F4 /* WeatherRepositoryProtocol.swift in Sources */,
+				2058F39C21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift in Sources */,
 				2058F39721BB964100A0A8F4 /* WeatherInteractor.swift in Sources */,
 				2016ECA321BADE4E006466A4 /* WeatherViewOutput.swift in Sources */,
 				2058F3BC21BBA5FB00A0A8F4 /* LocalStorageProtocol.swift in Sources */,
@@ -630,6 +659,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2016EC7E21BAD487006466A4 /* WeatherTests.swift in Sources */,
+				20C1921121BD1482008F7112 /* LocalStorageServiceTest.swift in Sources */,
+				20C1920B21BD056A008F7112 /* RealmManagerTest.swift in Sources */,
+				20C1920F21BD0B5F008F7112 /* TestAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  WeatherRepositoryProtocol.swift
+//  CititesRepositoryProtocol.swift
 //  Weather
 //
 //  Created by Nver Abgaryan on 12/8/18.

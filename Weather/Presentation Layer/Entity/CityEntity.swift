@@ -11,10 +11,11 @@ import Foundation
 struct CityEntity {
     
     var id = 0
+    
     var name = ""
-    var currentTemp  = 0.0
-    var minTemp = 0.0
-    var maxTemp = 0.0
-    var humidity = 0.0
+    var currentTemp  = ""
+    var minTemp = ""
+    var maxTemp = ""
+    var humidity = ""
     var weatherType = ""
 }

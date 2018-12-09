@@ -9,14 +9,14 @@
 import Foundation
 class NWWeatherMainEntity {
 
-    var currentTemp: Double = 0.0
-    var maxTemp:Double = 0
-    var minTemp:Double = 0
-    var humidity:Double = 0
+    var currentTemp: Double!
+    var maxTemp: Double!
+    var minTemp: Double!
+    var humidity: Double!
     
     init(json: [String: AnyObject]?) {
         enum Key : String {
-            case currentTemp = "temp" //"main"
+            case currentTemp = "temp" 
             case maxTemp = "temp_max"
             case minTemp = "temp_min"
             case humidity = "humidity"

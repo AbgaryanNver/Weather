@@ -18,7 +18,7 @@ struct RemoteManager : RemoteManagerProtocol {
                         completion(nil,nil)
                         return
                     }
-                    if let result = self.convertJsonToObject(json: json) {
+                    if let result = self.convertJsonToObject(json, forKey) {
                         completion(result,nil)
                     }
                 } catch {
@@ -30,8 +30,8 @@ struct RemoteManager : RemoteManagerProtocol {
         }.resume()
     }
 
-    private func convertJsonToObject(json: [String: AnyObject]) -> Array<NWCityEntity>? {
-        if let resultsArray = json["list"] as? Array<[String : AnyObject]> {
+    private func convertJsonToObject(_ json: [String: AnyObject], _ key: String) -> Array<NWCityEntity>? {
+        if let resultsArray = json[key] as? Array<[String : AnyObject]> {
             var infos = Array<NWCityEntity>()
             for result in resultsArray {
                 let obj = NWCityEntity(json: result)

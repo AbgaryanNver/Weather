@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kRowHeight : CGFloat = 135
-
 class WeatherViewController: UIViewController {
 
     @IBOutlet var searchBar: UISearchBar!
@@ -38,7 +36,6 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController: WeatherViewInput {
     
     func setupInitialState() {
-        tableView.rowHeight = kRowHeight
         title = "Cities"
     }
     

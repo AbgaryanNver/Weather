@@ -61,7 +61,6 @@ class RealmManager<T>: LocalStorageProtocol where T : Object  {
     }
     
     func fetchAll() -> [T] {
-
         return realm.objects(T.self).compactMap({ (entity) -> T in
             entity
         })

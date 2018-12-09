@@ -9,12 +9,10 @@
 import Foundation
 class NWWeatherDiscripionEntity {
     
-    var description = ""
+    var description: String!
     
     init(json: [String: AnyObject]?) {
-        enum Key : String {
-            case description = "description"
-        }
-        description = json?[Key.description.rawValue] as? String ?? ""
+  
+        description = json?["description"] as? String ?? ""
     }
 }

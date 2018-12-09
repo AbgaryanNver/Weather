@@ -44,10 +44,10 @@ class WeatherPresentor : WeatherViewOutput {
         for plainCity in plainCities {
             let cityEntity = CityEntity(id: plainCity.id,
                                         name: plainCity.name,
-                                        currentTemp: plainCity.currentTemp,
-                                        minTemp: plainCity.minTemp,
-                                        maxTemp: plainCity.maxTemp,
-                                        humidity: plainCity.humidity,
+                                        currentTemp: "current temp. = \(plainCity.currentTemp) C",
+                                        minTemp: "min temp. = \(plainCity.minTemp) C",
+                                        maxTemp: "max temp. = \(plainCity.maxTemp) C",
+                                        humidity: "humidity = \(plainCity.humidity)",
                                         weatherType: plainCity.weatherType)
             cities.append(cityEntity)
         }

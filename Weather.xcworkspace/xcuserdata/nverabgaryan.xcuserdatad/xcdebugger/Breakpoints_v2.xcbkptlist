@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather/Bussiness Logic Layer/Remote Service/Entities/NWCityEntity.swift"
-            timestampString = "565975558.177614"
+            timestampString = "566044129.2836519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "init(json:)"
             landmarkType = "7">
             <Locations>
@@ -67,61 +67,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/Remote Service/Entities/NWWeatherMainEntity.swift"
-            timestampString = "565994474.750096"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "init(json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Weather/Core Layer/Local Storage Core Layer/RealmManager.swift"
-            timestampString = "565979071.100215"
+            timestampString = "566044129.28392"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "update(block:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/LocalStorageService.swift"
-            timestampString = "565979071.1005861"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "queryCities(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/LocalStorageService.swift"
-            timestampString = "565979071.100935"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "queryCities(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -144,11 +96,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather/Bussiness Logic Layer/LocalStorageService.swift"
-            timestampString = "565979071.1011"
+            timestampString = "566044129.284157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -163,13 +115,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/LocalStorageService.swift"
-            timestampString = "565979071.101173"
+            filePath = "WeatherTests/RealmManagerTest.swift"
+            timestampString = "566043969.1624711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "convertToPlainCity(dbCities:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "tearDown()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -179,13 +131,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/LocalStorageService.swift"
-            timestampString = "565979071.101239"
+            filePath = "WeatherTests/RealmManagerTest.swift"
+            timestampString = "566043969.162542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "save(cities:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "testGetFromRealmManager()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -195,13 +147,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather/Bussiness Logic Layer/RemoteService.swift"
-            timestampString = "565994474.750447"
+            filePath = "WeatherTests/LocalStorageServiceTest.swift"
+            timestampString = "566043969.1626149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "fetchCities(completion:)"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "testSave()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -8,20 +8,10 @@
 
 class NWCityEntity {
     
-    var id : Int = 0
-    var name : String = ""
+    var id : Int!
+    var name : String!
     var weatherInfo: NWWeatherMainEntity!
     var weatherType: NWWeatherDiscripionEntity!
-
-    var plainObject : CityPlainEntity {
-        return CityPlainEntity(id: id,
-                               name: name,
-                               currentTemp: weatherInfo.currentTemp,
-                               minTemp: weatherInfo.minTemp,
-                               maxTemp: weatherInfo.maxTemp,
-                               humidity: weatherInfo.humidity,
-                               weatherType: weatherType.description)
-    }
     
     init(json: [String: AnyObject]) {
         print(json)
@@ -40,5 +30,15 @@ class NWCityEntity {
         name = name_ ?? ""
         weatherInfo = NWWeatherMainEntity(json: weatherInfo_)
         weatherType = NWWeatherDiscripionEntity(json: weatherType_?.first)
+    }
+    
+    var plainObject : CityPlainEntity {
+        return CityPlainEntity(id: id,
+                               name: name,
+                               currentTemp: weatherInfo.currentTemp,
+                               minTemp: weatherInfo.minTemp,
+                               maxTemp: weatherInfo.maxTemp,
+                               humidity: weatherInfo.humidity,
+                               weatherType: weatherType.description)
     }
 }

@@ -50,13 +50,12 @@ class LocalStorageService : LocalStorageServiceProtocol {
 //Convertations
 extension LocalStorageService {
     
-    fileprivate func convertToPlainCity(dbCities: Array<LSCityEntity>?) -> Array<CityPlainEntity>? {
-        guard let cities = dbCities else {
+    fileprivate func convertToPlainCity(dbCities: Array<LSCityEntity>) -> Array<CityPlainEntity>? {
+        if dbCities.isEmpty {
             return nil
         }
         var plainCities = Array<CityPlainEntity>()
-        for city in cities {
-            //let plainObj = city.plainObject
+        for city in dbCities {
             var plainObj = CityPlainEntity()
             plainObj.id = city.id
             plainObj.name = city.name

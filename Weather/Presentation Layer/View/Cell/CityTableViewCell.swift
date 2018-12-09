@@ -22,10 +22,10 @@ class CityTableViewCell: UITableViewCell {
     func configureCell(_ entity: CityEntity) {
         id = entity.id
         cityName.text = entity.name
-        currentTemp.text = "current temp. = \(entity.currentTemp) C"
-        minTemp.text = "min temp. = \(entity.minTemp) C"
-        maxTemp.text = "max temp. = \(entity.maxTemp) C"
-        humidity.text = "humidity = \(entity.humidity)"
+        currentTemp.text = entity.currentTemp
+        minTemp.text = entity.minTemp
+        maxTemp.text = entity.maxTemp
+        humidity.text = entity.humidity
         weatherDescription.text = entity.weatherType
     }
 }
