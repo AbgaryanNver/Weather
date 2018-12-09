@@ -12,53 +12,27 @@ class NWCityEntity {
     var name : String
     
     var currentTemp : Double {
-        get {
-            return weatherInfo?.currentTemp ?? 0.0
-        }
-        set(s) {
-            weatherInfo?.currentTemp = s
-        }
+        return weatherInfo?.currentTemp ?? 0.0
     }
     
     var minTemp : Double {
-        get {
-            return weatherInfo?.minTemp ?? 0.0
-        }
-        set(s) {
-            weatherInfo?.minTemp = s
-        }
+        return weatherInfo?.minTemp ?? 0.0
     }
     
-    
     var maxTemp : Double {
-        get {
-            return weatherInfo?.maxTemp ?? 0.0
-        }
-        set(s){
-            weatherInfo?.maxTemp = s
-        }
+        return weatherInfo?.maxTemp ?? 0.0
     }
     
     var humidity : Double {
-        get {
-            return weatherInfo?.humidity ?? 0.0
-        }
-        set(s) {
-            weatherInfo?.humidity = s
-        }
+        return weatherInfo?.humidity ?? 0.0
     }
     
     var weatherDescription : String {
-        get {
-            return weatherType?.description ?? ""
-        }
-        set(s) {
-            weatherType?.description = s
-        }
+        return weatherType?.description ?? ""
     }
     
-    var weatherInfo: NWWeatherMainEntity?
-    var weatherType: NWWeatherDiscripionEntity?
+    fileprivate var weatherInfo: NWWeatherMainEntity?
+    fileprivate var weatherType: NWWeatherDiscripionEntity?
     
     init(json: [String: AnyObject]) {
         print(json)
