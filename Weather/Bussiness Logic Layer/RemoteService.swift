@@ -13,19 +13,26 @@ class RemoteService : RemoteServiceProtocol {
     var networkManager: RemoteManagerProtocol!
     
     func fetchCities(completion: @escaping (Array<CityPlainEntity>?, Error?) -> Void) {
-        if let url = Config.URLCreator.url {
-            networkManager.downloadArray(forKey: "list", url: url) {[weak self] (response: Array<NWCityEntity>?, error: Error?) -> Void in
-                if let error = error {
-                    completion(nil, error)
-                } else {
-                    let plainCities = self?.convertToPlainCity(networkCities: response)
-                    completion(plainCities, nil)
-                }
+        guard let url = Config.URLCreator.url else { return }
+        networkManager.downloadData(url) {[weak self] (data_: Data?, error_: Error?) -> Void in
+            if let data = data_, error_ == nil {
+                do {
+                    guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject] else {
+                        completion(nil,nil)
+                        return
+                    }
+                    if let nwEntity = self?.convertJsonToObject(json, "list") {
+                        let playinObj = self?.convertToPlainCity(networkCities: nwEntity)
+                        completion(playinObj,nil)
+                    }
+                } catch { print("json parsing exeption")}
+            } else {
+                completion(nil, error_)
             }
         }
     }
     
-    fileprivate func convertToPlainCity(networkCities: Array<NWCityEntity>?) -> Array<CityPlainEntity>? {
+    private func convertToPlainCity(networkCities: Array<NWCityEntity>?) -> Array<CityPlainEntity>? {
         guard let cities = networkCities else {
             return nil
         }
@@ -35,6 +42,18 @@ class RemoteService : RemoteServiceProtocol {
             plainCities.append(plainObj)
         }
         return plainCities
+    }
+    
+    private func convertJsonToObject(_ json: [String: AnyObject], _ key: String) -> Array<NWCityEntity>? {
+        if let resultsArray = json[key] as? Array<[String : AnyObject]> {
+            var infos = Array<NWCityEntity>()
+            for result in resultsArray {
+                let obj = NWCityEntity(json: result)
+                infos.append(obj)
+            }
+            return infos
+        }
+        return nil
     }
     
 }

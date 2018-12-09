@@ -16,9 +16,11 @@ class WeatherPresentor : WeatherViewOutput {
     
     func viewIsReady() {
         view?.setupInitialState()
+        view?.showProgressBar(show: true)
         interactor?.obtainCities { [unowned self] (plainCities) in
             let cities = self.convertCitiesForView(plainCities: plainCities)
             if cities.count > 0 {
+                self.view?.showProgressBar(show: false)
                 self.view?.updateTable(cities)
             }
         }

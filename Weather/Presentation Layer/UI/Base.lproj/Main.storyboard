@@ -100,6 +100,7 @@
                                                 <constraint firstItem="l3o-uB-QmT" firstAttribute="leading" secondItem="0wH-3N-nc9" secondAttribute="leading" constant="15" id="4U7-Q9-MFa"/>
                                                 <constraint firstItem="wPL-cD-dEc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0wH-3N-nc9" secondAttribute="leading" constant="20" symbolic="YES" id="5vG-gn-AUN"/>
                                                 <constraint firstAttribute="trailing" secondItem="wPL-cD-dEc" secondAttribute="trailing" constant="10" id="BeH-LJ-sQU"/>
+                                                <constraint firstItem="pFd-Xu-nQ5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0wH-3N-nc9" secondAttribute="leading" constant="20" symbolic="YES" id="Cdj-Kv-gE2"/>
                                                 <constraint firstItem="YyT-tO-8zH" firstAttribute="top" secondItem="0wH-3N-nc9" secondAttribute="top" constant="15" id="JiS-q9-ERQ"/>
                                                 <constraint firstItem="l3o-uB-QmT" firstAttribute="top" secondItem="0wH-3N-nc9" secondAttribute="top" constant="70" id="Rb7-zU-FKT"/>
                                                 <constraint firstItem="YyT-tO-8zH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0wH-3N-nc9" secondAttribute="leading" constant="20" symbolic="YES" id="UrH-MI-tHG"/>
@@ -108,6 +109,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="l3o-uB-QmT" secondAttribute="bottom" constant="70" id="aWA-wn-P2D"/>
                                                 <constraint firstItem="wPL-cD-dEc" firstAttribute="top" secondItem="YyT-tO-8zH" secondAttribute="bottom" constant="10" id="f3j-Kb-phj"/>
                                                 <constraint firstAttribute="trailing" secondItem="YyT-tO-8zH" secondAttribute="trailing" constant="10" id="fIO-fh-G2h"/>
+                                                <constraint firstItem="Cn2-36-5eb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l3o-uB-QmT" secondAttribute="trailing" constant="8" symbolic="YES" id="n6i-gF-Vl1"/>
                                                 <constraint firstItem="TXy-QD-F8H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0wH-3N-nc9" secondAttribute="leading" constant="20" symbolic="YES" id="oCI-8G-ruJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="pFd-Xu-nQ5" secondAttribute="trailing" constant="10" id="uTi-fm-b8S"/>
                                             </constraints>
@@ -128,6 +130,10 @@
                                     <outlet property="delegate" destination="Igy-af-gAV" id="M4U-jI-l3s"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eM7-wb-GqM">
+                                <rect key="frame" x="169" y="388" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.25095507500000003" green="0.25099658969999999" blue="0.25094601509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -142,6 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="tXh-IR-DLy"/>
                     </view>
                     <connections>
+                        <outlet property="activitIndicator" destination="eM7-wb-GqM" id="mar-Dx-UBt"/>
                         <outlet property="searchBar" destination="byi-n2-rs4" id="B5A-2v-8aO"/>
                         <outlet property="tableView" destination="JHq-BZ-gT1" id="2bH-a4-QrQ"/>
                     </connections>

@@ -12,6 +12,7 @@ class WeatherViewController: UIViewController {
 
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet  var activitIndicator: UIActivityIndicatorView!
     
     var output: WeatherViewOutput?
     var cities : Array<CityEntity>?
@@ -41,8 +42,14 @@ extension WeatherViewController: WeatherViewInput {
     
     func updateTable(_ infos: Array<CityEntity>) {
         self.cities = infos
-        DispatchQueue.main.async { [unowned self] in
-            self.tableView.reloadData()
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
+    func showProgressBar(show: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            show == true ? self?.activitIndicator.startAnimating() :    self?.activitIndicator.stopAnimating()
         }
     }
 

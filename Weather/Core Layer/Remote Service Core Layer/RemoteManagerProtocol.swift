@@ -10,5 +10,5 @@ import Foundation
 
 protocol RemoteManagerProtocol {
     
-    func downloadArray(forKey: String, url: URL, completion: @escaping (Array<NWCityEntity>?, Error?) -> Void)
+    func downloadData(_ url: URL, completion: @escaping (Data?, Error?) -> Void)
 }

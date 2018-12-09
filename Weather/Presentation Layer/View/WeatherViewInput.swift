@@ -7,8 +7,7 @@
 //
 
 protocol WeatherViewInput: class {
-
     func setupInitialState()
-    
     func updateTable(_ infos: Array<CityEntity>)
+    func showProgressBar(show: Bool)
 }
