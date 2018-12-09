@@ -40,7 +40,7 @@
 		2058F3C221BBCBD100A0A8F4 /* NWWeatherMainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3C121BBCBD100A0A8F4 /* NWWeatherMainEntity.swift */; };
 		2058F3C421BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058F3C321BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift */; };
 		20B4C0AD21BB086700EE02F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B4C0AC21BB086700EE02F8 /* Default-568h@2x.png */; };
-		20C1920421BC5183008F7112 /* Cofig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920321BC5183008F7112 /* Cofig.swift */; };
+		20C1920421BC5183008F7112 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920321BC5183008F7112 /* Config.swift */; };
 		20C1920B21BD056A008F7112 /* RealmManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920521BCFCEA008F7112 /* RealmManagerTest.swift */; };
 		20C1920D21BD0AAC008F7112 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920C21BD0AAC008F7112 /* main.swift */; };
 		20C1920F21BD0B5F008F7112 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1920E21BD0B5E008F7112 /* TestAppDelegate.swift */; };
@@ -97,7 +97,7 @@
 		2058F3C121BBCBD100A0A8F4 /* NWWeatherMainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWWeatherMainEntity.swift; sourceTree = "<group>"; };
 		2058F3C321BBCBFB00A0A8F4 /* NWWeatherDiscripionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWWeatherDiscripionEntity.swift; sourceTree = "<group>"; };
 		20B4C0AC21BB086700EE02F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		20C1920321BC5183008F7112 /* Cofig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cofig.swift; sourceTree = "<group>"; };
+		20C1920321BC5183008F7112 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		20C1920521BCFCEA008F7112 /* RealmManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerTest.swift; sourceTree = "<group>"; };
 		20C1920C21BD0AAC008F7112 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20C1920E21BD0B5E008F7112 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		2016EC8821BAD5D9006466A4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				20C1920321BC5183008F7112 /* Cofig.swift */,
+				20C1920321BC5183008F7112 /* Config.swift */,
 				2058F39821BB993300A0A8F4 /* Timer Service */,
 			);
 			path = Services;
@@ -335,7 +335,7 @@
 		2016EC9C21BADC0A006466A4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				2058F39321BB88C100A0A8F4 /* Presentation Entities */,
+				2058F39321BB88C100A0A8F4 /* Entities */,
 				2058F39B21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift */,
 				2058F39D21BB9A7E00A0A8F4 /* CitiesRepository.swift */,
 			);
@@ -377,12 +377,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2058F39321BB88C100A0A8F4 /* Presentation Entities */ = {
+		2058F39321BB88C100A0A8F4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				2058F39421BB892F00A0A8F4 /* CityPlainEntity.swift */,
 			);
-			path = "Presentation Entities";
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		2058F39821BB993300A0A8F4 /* Timer Service */ = {
@@ -653,7 +653,7 @@
 				2058F39221BB102700A0A8F4 /* WeatherPresentor.swift in Sources */,
 				2016ECA521BADF17006466A4 /* WeatherProtocols.swift in Sources */,
 				2058F3BA21BBA5F100A0A8F4 /* RealmManager.swift in Sources */,
-				20C1920421BC5183008F7112 /* Cofig.swift in Sources */,
+				20C1920421BC5183008F7112 /* Config.swift in Sources */,
 				2016EC6B21BAD486006466A4 /* WeatherViewController.swift in Sources */,
 				2058F39C21BB9A7600A0A8F4 /* CititesRepositoryProtocol.swift in Sources */,
 				2058F39721BB964100A0A8F4 /* WeatherInteractor.swift in Sources */,

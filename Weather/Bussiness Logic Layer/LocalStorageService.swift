@@ -21,7 +21,7 @@ class LocalStorageService : LocalStorageServiceProtocol {
         let dbManager = RealmManager<LSCityEntity>()
         var dbCities = Array<LSCityEntity>()
         if !searchText.isEmpty {
-            dbCities = dbManager.fetch(predicate: NSPredicate(format: "name contains[c] %@", searchText))
+            dbCities = dbManager.fetch(predicate: NSPredicate(format: "name BEGINSWITH[c] %@", searchText))
         } else {
             dbCities = dbManager.fetchAll()
         }

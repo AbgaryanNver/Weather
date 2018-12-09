@@ -1,5 +1,5 @@
 //
-//  Cofig.swift
+//  Config.swift
 //  Weather
 //
 //  Created by Nver Abgaryan on 12/8/18.

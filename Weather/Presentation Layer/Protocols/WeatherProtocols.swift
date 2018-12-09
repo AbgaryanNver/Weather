@@ -5,19 +5,6 @@
 //  Created by Nver Abgaryan on 12/7/18.
 //  Copyright © 2018 Nver Abgaryan. All rights reserved.
 
-
-//protocol CitiesViewToPresenterProtocol : class {
-//    func didTriggerViewDidLoaded()
-//    func didTriggerViewWillAppear()
-//    func didTriggerViewWillDisappear()
-//
-//    func didTriggerSearchBarTextChanged(searchText: String)
-//}
-
-
-
-
-
 protocol WeatherPresenterToInteractorProtocol : class {
     func obtainCities(completion: @escaping (Array<CityPlainEntity>) -> Void)
     func obtainCities(searchText: String, completion: @escaping (Array<CityPlainEntity>) -> Void)

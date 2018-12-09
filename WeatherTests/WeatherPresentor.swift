@@ -16,8 +16,8 @@ class WeatherPresentor : WeatherViewOutput {
     
     func viewIsReady() {
         view?.setupInitialState()
-        interactor?.obtainCities { [unowned self] (dbCities) in
-            let cities = self.convertCitiesForView(plainCities: dbCities)
+        interactor?.obtainCities { [unowned self] (plainCities) in
+            let cities = self.convertCitiesForView(plainCities: plainCities)
             if cities.count > 0 {
                 self.view?.updateTable(cities)
             }

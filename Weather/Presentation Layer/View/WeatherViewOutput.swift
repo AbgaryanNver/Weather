@@ -12,5 +12,4 @@ protocol WeatherViewOutput {
     func didTriggerViewWillAppear()
     func didTriggerViewWillDisappear()
     func didTriggerSearchEvent(_ searchString: String)
-
 }
