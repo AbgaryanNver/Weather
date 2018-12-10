@@ -15,7 +15,6 @@ class NWWeatherMainEntity {
     var humidity: Double
     
     init?(json: [String: AnyObject]?) {
-        
         guard let currentTemp_ = json?[Key.currentTemp] as? Double,
               let maxTemp_ = json?[Key.maxTemp] as? Double,
               let minTemp_ = json?[Key.minTemp] as? Double,
