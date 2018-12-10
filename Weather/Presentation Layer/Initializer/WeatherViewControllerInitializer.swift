@@ -25,7 +25,6 @@ struct WeatherViewControllerInitializer {
         view?.output = weatherPresenter
         weatherPresenter.interactor = weatherInteractor
         weatherPresenter.view = view
-        weatherPresenter.router = nil
         weatherInteractor.presenter = weatherPresenter
         weatherInteractor.citiesRepository = citiesRepository
         weatherInteractor.timeService = timeService

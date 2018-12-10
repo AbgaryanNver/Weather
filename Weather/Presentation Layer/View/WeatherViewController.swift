@@ -49,7 +49,7 @@ extension WeatherViewController: WeatherViewInput {
     
     func showProgressBar(show: Bool) {
         DispatchQueue.main.async { [weak self] in
-            show == true ? self?.activitIndicator.startAnimating() :    self?.activitIndicator.stopAnimating()
+            show ? self?.activitIndicator.startAnimating() : self?.activitIndicator.stopAnimating()
         }
     }
 
