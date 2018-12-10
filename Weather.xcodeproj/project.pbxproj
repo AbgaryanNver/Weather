@@ -74,7 +74,7 @@
 		2016ECA421BADF17006466A4 /* WeatherProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProtocols.swift; sourceTree = "<group>"; };
 		2016ECA621BB004E006466A4 /* CityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEntity.swift; sourceTree = "<group>"; };
 		2016ECA921BB0283006466A4 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
-		2058F39121BB102700A0A8F4 /* WeatherPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherPresentor.swift; path = WeatherTests/WeatherPresentor.swift; sourceTree = SOURCE_ROOT; };
+		2058F39121BB102700A0A8F4 /* WeatherPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherPresentor.swift; path = "Weather/Presentation Layer/Presenter/WeatherPresentor.swift"; sourceTree = SOURCE_ROOT; };
 		2058F39421BB892F00A0A8F4 /* CityPlainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPlainEntity.swift; sourceTree = "<group>"; };
 		2058F39621BB964100A0A8F4 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
 		2058F39921BB993300A0A8F4 /* TimeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				2016EC9221BAD882006466A4 /* Protocols */,
 				2016EC9321BAD8A2006466A4 /* Router */,
 				2016EC8D21BAD7E4006466A4 /* View */,
-				2016EC9421BAD8BB006466A4 /* Presenter */,
+				20C6219621BE300F00101C87 /* Presenter */,
 				2016EC9521BAD8D3006466A4 /* Interactor */,
 				2016EC9621BAD8ED006466A4 /* Entity */,
 				2016EC8E21BAD802006466A4 /* UI */,
@@ -257,14 +257,6 @@
 				20CEF53D21BD989F0045DF8C /* WeatherRouter.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		2016EC9421BAD8BB006466A4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				2058F39121BB102700A0A8F4 /* WeatherPresentor.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		2016EC9521BAD8D3006466A4 /* Interactor */ = {
@@ -426,6 +418,14 @@
 				20C1921A21BD534A008F7112 /* CityPlainEntityTest.swift */,
 			);
 			path = "Entity Tests";
+			sourceTree = "<group>";
+		};
+		20C6219621BE300F00101C87 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2058F39121BB102700A0A8F4 /* WeatherPresentor.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
